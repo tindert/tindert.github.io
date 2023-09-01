@@ -162,11 +162,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
         let newFlower = arObject.clone();
         newFlower.visible = true;
         newFlower.matrix = matrix;
+        let f_scale = 1.5
+        newFlower.scale.set(f_scale,f_scale,f_scale);
+
         scene.addNode(newFlower);
 
         flowers.push(newFlower);
-        let f_scale = 1.5
-        newFlower.scale.set(f_scale,f_scale,f_scale);
         // For performance reasons if we add too many objects start
         // removing the oldest ones to keep the scene complexity
         // from growing too much.
