@@ -120,8 +120,8 @@ function addARObjectAt(matrix) {
   let newFlower = arObject.clone();
   newFlower.visible = true;
   newFlower.matrix = matrix;
-  let f_scale = 1.5
-  newFlower.scale.set(f_scale,f_scale,f_scale);
+//   let f_scale = 1.5
+//   newFlower.scale.set(f_scale,f_scale,f_scale);
 
   scene.addNode(newFlower);
 
@@ -148,7 +148,7 @@ function onSelect(event) {
 
 // Called every time a XRSession requests that a new frame be drawn.
 function onXRFrame(t, frame) {
-  console.log("function onXRFrame(t, frame) ");
+  //console.log("function onXRFrame(t, frame) ");
   let session = frame.session;
   let pose = frame.getViewerPose(xrRefSpace);
 
