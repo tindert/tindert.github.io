@@ -19,4 +19,12 @@
       transform: scale(1);
     }
   }
+
   
+  .image-container {
+    display: flex;
+  }
+  
+  .semi-transparent-image {
+    opacity: 0.5;
+  }  
