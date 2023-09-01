@@ -25,9 +25,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
     <meta name='mobile-web-app-capable' content='yes'>
     <meta name='apple-mobile-web-app-capable' content='yes'>
-    <link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'>
-    <link rel='icon' type='image/png' sizes='96x96' href='favicon-96x96.png'>
-    <link rel='stylesheet' href='css/common.css'>
+
 
     <title>Hit Test</title>
   </head>
@@ -42,14 +40,14 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       </details>
     </header>
     <script type="module">
-      import {WebXRButton} from './js/util/webxr-button.js';
-      import {Scene} from './js/render/scenes/scene.js';
-      import {Renderer, createWebGLContext} from './js/render/core/renderer.js';
-      import {Node} from './js/render/core/node.js';
-      import {Gltf2Node} from './js/render/nodes/gltf2.js';
-      import {DropShadowNode} from './js/render/nodes/drop-shadow.js';
-      import {vec3} from './js/render/math/gl-matrix.js';
-      import {Ray} from './js/render/math/ray.js';
+      import {WebXRButton} from './js-library/util/webxr-button.js';
+      import {Scene} from './js-library/render/scenes/scene.js';
+      import {Renderer, createWebGLContext} from './js-library/render/core/renderer.js';
+      import {Node} from './js-library/render/core/node.js';
+      import {Gltf2Node} from './js-library/render/nodes/gltf2.js';
+      import {DropShadowNode} from './js-library/render/nodes/drop-shadow.js';
+      import {vec3} from './js-library/render/math/gl-matrix.js';
+      import {Ray} from './js-library/render/math/ray.js';
 
       // XR globals.
       let xrButton = null;
